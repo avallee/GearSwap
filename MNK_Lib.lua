@@ -284,7 +284,7 @@ function setupTextWindow()
     default_settings.text.stroke.blue = 0
 
     --Creates the initial Text Object will use to create the different sections in
-    if not (main_text_hub == nil) then
+    if main_text_hub ~= nil then
         texts.destroy(main_text_hub)
     end
     main_text_hub = texts.new('', default_settings, default_settings)
